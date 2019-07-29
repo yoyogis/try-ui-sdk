@@ -1,0 +1,32 @@
+{
+  "name": "try-ui-state-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.dev.js --hot --inline",
+    "build": "rm -rf ./dist/* && webpack --config webpack.config.dev.js&&cp index.html ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoyogis/try-ui-state-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoyogis/try-ui-state-api/issues"
+  },
+  "homepage": "https://github.com/yoyogis/try-ui-state-api#readme",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "try-ui-stateless-api": "file:../try-ui-stateless-api",
+    "typescript": "^3.5.3",
+    "vuex": "^3.1.1"
+  }
+}

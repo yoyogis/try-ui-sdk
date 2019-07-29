@@ -1,0 +1,19 @@
+{
+  "name": "try-ui-stateless-api",
+  "version": "0.0.1",
+  "description": "try-ui-stateless-api",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoyogis/try-ui-stateless-api.git"
+  },
+  "author": "yu.yuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoyogis/try-ui-stateless-api/issues"
+  },
+  "homepage": "https://github.com/yoyogis/try-ui-stateless-api#readme"
+}

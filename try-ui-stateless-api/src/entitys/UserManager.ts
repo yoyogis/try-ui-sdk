@@ -1,7 +1,5 @@
-import { User } from "./User";
+import { User } from './user.entity';
 
-export class UserManager{
-    constructor(public list:Array<User>=[], public selected:User){
-        
-    }
+export class UserManager {
+  constructor(public list: User[] = [], public selected: User) {}
 }

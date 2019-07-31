@@ -1,6 +1,6 @@
 import { User } from "try-ui-stateless-api";
 
-export class UserModule {
+export class UserStore {
   list: Array<User>=[];
   selected: User=new User("222",12);
 

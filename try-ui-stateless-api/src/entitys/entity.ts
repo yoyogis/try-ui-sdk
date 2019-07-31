@@ -1,2 +1,2 @@
- export {User} from './User';
- export {UserManager} from './UserManager';
+ export {User} from './user.entity';
+ export {MenuItem} from './menu-item.entity';

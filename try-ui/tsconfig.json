@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strictPropertyInitialization": false,  /* Enable strict checking of property initialization in classes. */
+    "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
     "sourceMap": true,
     "baseUrl": ".",
     "types": [

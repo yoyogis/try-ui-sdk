@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { userStore } from 'try-ui-state-api';
+import { userModule } from 'try-ui-state-api';
 import { User } from 'try-ui-stateless-api';
 
 @Component
@@ -11,27 +11,27 @@ export default class HelloWorld extends Vue {
   }
 
   get outsideState() {
-    return userStore.getUsers();
+    return userModule.userStore.getUsers();
   }
 
   get selectedUser() {
-    return userStore.getSelectedUser();
+    return userModule.userStore.getSelectedUser();
   }
 
   get selectedUserAge() {
-    return userStore.getSelectedUserName();
+    return userModule.userStore.getSelectedUserName();
   }
 
   public click() {
-    userStore.addUser(new User('abc', Math.random()));
+    userModule.userStore.addUser(new User('abc', Math.random()));
   }
 
   public rename() {
     const name = 'hhhh';
-    userStore.rename(userStore.getSelectedUser(), name);
+    userModule.userStore.rename(userModule.userStore.getSelectedUser(), name);
   }
 
   public select(user: User) {
-    userStore.selectUser(user);
+    userModule.userStore.selectUser(user);
   }
 }

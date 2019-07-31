@@ -1,3 +1,4 @@
-export * from  './modules/home/home.module';
-export * from  './modules/user.module';
-export * from './modules/home/sub/sub.module';
+import homeModule from './modules/home/home.module';
+import userModule from './modules/user.module';
+
+export { homeModule, userModule };

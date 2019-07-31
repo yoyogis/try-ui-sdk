@@ -1,6 +1,5 @@
 import { HeaderStore } from './header.store';
-export * from './sub/sub.module';
-
+import  {subModule} from './sub/sub.module';
 const headerStore = new HeaderStore();
 
-export { headerStore };
+export const  homemModule = { headerStore, subModule };

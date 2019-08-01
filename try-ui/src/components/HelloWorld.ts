@@ -1,6 +1,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { userModule } from 'try-ui-state-api';
 import { User } from 'try-ui-stateless-api';
+import { homeModule } from 'try-ui-state-api';
 
 @Component
 export default class HelloWorld extends Vue {
@@ -23,12 +24,13 @@ export default class HelloWorld extends Vue {
   }
 
   public click() {
+    homeModule.headerStore.requestMenus();
     userModule.userStore.addUser(new User('abc', Math.random()));
   }
 
   public rename() {
     const name = 'hhhh';
-    userModule.userStore.rename(userModule.userStore.getSelectedUser(), name);
+    userModule.userStore.rename(name);
   }
 
   public select(user: User) {

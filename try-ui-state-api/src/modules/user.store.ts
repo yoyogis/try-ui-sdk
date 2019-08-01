@@ -20,8 +20,8 @@ export class UserStore {
     this.list.push(user);
   }
 
-  rename(user: User, name: string) {
-    user.name = name;
+  rename(name: string) {
+    this.selected.name = name;
   }
 
   selectUser(user: User) {
